@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+// ::selection {
+//   color: $white-cl;
+//   background: $text-primary-cl;
+// }
+//
+// ::-moz-selection {
+//   color: $white-cl;
+//   background: $text-primary-cl;
+// }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  @apply font-normal text-black;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  user-select: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  &.underline:hover {
+    text-decoration: underline;
+  }
+}
+
+a {
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  @apply font-bold;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2, .text-heading2 {
+  font-size: 1.33rem;
+  @screen md {
+    font-size: 1.73rem;
+  }
+}
+
+h3, .text-heading3 {
+  font-size: 1.46rem;
+}
+
+h4, .text-heading4 {
+  font-size: 1.33rem;
+}
+
+h5, .text-heading5 {
+  font-size: 1.2rem;
+}
+
+h6, .text-heading6 {
+  font-size: 1rem;
+}
+
+p {
+  @apply m-0 leading-normal;
+}

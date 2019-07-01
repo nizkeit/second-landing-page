@@ -1,0 +1,15 @@
+.l-footer {
+    /*height: 180px;*/
+    .newsletter {
+        &--form {
+            width: 360px;
+        }
+        &--input {
+            border: 1px solid #009688;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            
+        }
+    }
+
+}

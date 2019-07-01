@@ -1,0 +1,1 @@
+require('./modules/module2');

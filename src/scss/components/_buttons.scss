@@ -1,0 +1,44 @@
+/* All modules reusable parts ------------------------
+ ----------------------------------------------------- */
+/* Links & Buttons */
+.btn-main {
+
+  &--round {
+    @apply font-bold rounded-xl text-base px-6 py-3;
+
+    &.is-round--large {
+      @apply rounded-xl2 px-8;
+    }
+  }
+
+  &--alt {
+    @apply text-white bg-orange-400;
+
+    &:hover {
+      @apply bg-orange-500;
+    }
+  }
+
+  &--shadow {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 1px 1.7px 2px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  &--primary { 
+     @apply text-white uppercase rounded font-semibold;
+     padding: 0.75rem 2.6rem;
+  } 
+  
+  &--send {
+    background: url(../img/send-icon.png) no-repeat center center #009688;
+    padding: 1.6rem 2rem;
+  } 
+
+}
+ 
+//icons
+.icon-text {
+  background: url(../img/account-icon.png) no-repeat 20px center #ececec;
+}
+.icon-mail {
+  background: url(../img/email-icon.png) no-repeat 20px center #ececec;
+}
