@@ -4,7 +4,7 @@
 .btn-main {
 
   &--round {
-    @apply font-bold rounded-xl text-base px-6 py-3;
+    @apply rounded-xl text-base px-6 py-3;
 
     &.is-round--large {
       @apply rounded-xl2 px-8;
@@ -25,7 +25,6 @@
 
   &--primary { 
      @apply text-white uppercase rounded font-semibold;
-     padding: 0.75rem 2.6rem;
   } 
   
   &--send {
@@ -33,12 +32,4 @@
     padding: 1.6rem 2rem;
   } 
 
-}
- 
-//icons
-.icon-text {
-  background: url(../img/account-icon.png) no-repeat 20px center #ececec;
-}
-.icon-mail {
-  background: url(../img/email-icon.png) no-repeat 20px center #ececec;
 }
