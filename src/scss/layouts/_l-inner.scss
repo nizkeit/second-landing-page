@@ -7,8 +7,7 @@
     &-wrap {
         width: 690px;
     }
-
-    .scroll-down {
+     .scroll-down {
         background: url(../img/arrow-down-icon.png) no-repeat center center;
         background-size: cover;
         width: 23px;
@@ -16,21 +15,9 @@
     }
 }
 .about, .services, .advantages {
-    @media screen and (min-width: 600px) {
-        padding: 60px 0;
-        }
-    @media screen and (min-width: 1024px) {
-        padding: 90px 0;
-    }
         padding: 135px 0;
 }
 .gallery {
-    @media screen and (min-width: 600px) {
-        padding: 30px 0;
-    }//media sm
-    @media screen and (min-width:1024px) {
-        padding: 50px 0;
-    }//media md
         padding: 65px 0;
 }
 .contact {
@@ -38,28 +25,48 @@
     background-size: cover;
     padding: 70px 0;
     &--wrap {
-        @media screen and (min-width: 600px) {
-                max-width: 90%;
-                padding: 40px 0; 
-            } //media sm
-        @media screen and (min-width: 1024px) {
-                max-width: 90%; 
-            } //media md
                 max-width: 1100px;
                 padding: 90px 0;
                 border-radius: 5px;
                 box-shadow: 1px 1.7px 12px 0 rgba(0, 0, 0, 0.12), 1.5px 2.6px 9px 0 rgba(0, 0, 0, 0.23);
-        }
-
-        
-    &--form {
-        @media screen and (min-width:600px) {
-                max-width: 100%;
-                padding-right: 20px;
-            }//media sm
-        @media screen and (min-width:1024px) {
-                max-width: 350px;
-                padding-right: 20px;
-            }//media md
-        }
+            }
 }
+//MEDIA QUERIES
+
+@media screen and (min-width: 600px) {
+    .about, .services, .advantages {
+        padding: 60px 0;
+    }
+    .gallery {
+        padding: 30px 0;
+    }
+    .contact {
+        &--wrap {
+            max-width: 90%;
+            padding: 40px 0; 
+        }
+        &--form {
+            max-width: 100%;
+            padding-right: 20px;
+        }
+            }
+            //SM media end
+                }
+    @media screen and (min-width: 1024px) {
+    .about, .services, .advantages {
+        padding: 90px 0;
+    }
+    .gallery {
+        padding: 50px 0;
+    }
+    .contact {
+        &--wrap {
+            max-width: 90%; 
+        }
+        &--form {
+            max-width: 350px;
+            padding-right: 20px;
+        }
+            }
+            //MD media end
+                }
