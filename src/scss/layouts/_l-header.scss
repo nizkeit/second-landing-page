@@ -1,5 +1,7 @@
 .l-header {
     height: 80px;
+    background: url(../img/header-bg.png) no-repeat center center;
+    background-size: cover;
 }
 .nav {
  &__menu {
