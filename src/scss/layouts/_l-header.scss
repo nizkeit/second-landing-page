@@ -4,6 +4,9 @@
     background-size: cover;
     z-index: 1;
 }
+.is-open {
+    display: block;
+}
 /*.nav {
  &__menu {
   &-item {

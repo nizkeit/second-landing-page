@@ -1,11 +1,30 @@
-<header class="l-header w-full fixed bg-fixed text-right sm: h-10 sm: px-8 sm: py-12 md:h-20 md:px-6 md:py-0">
+<header class="l-header w-full fixed bg-fixed text-right xs:h-auto sm: h-10 xs:py-10 sm: px-8 sm: py-12 md:h-20 md:px-4 md:py-0">
     <div class="container flex justify-between h-full items-center">
-        <div class="sm: w-1/12 md:w-2/12">
+        <div class="xs:hidden sm:inline-flex sm: w-1/12 md:w-2/12">
             <a href="#" class="logo"><img src="/img/logo.png" alt="logo"></a>
         </div>
-        <div class="sm: w-11/12 md:w-10/12">
-            <nav class="nav inline-flex justify-between">
-                <ul class="nav__menu inline-flex text-white font-medium opacity-87 sm: text-sm md:text-base">
+        <div class="xs: w-full sm: w-11/12 md:w-10/12 md:inline-flex md:justify-center md:items-center">
+            <nav class="nav xs:flex xs:justify-around sm:inline-flex justify-between flex-wrap">
+                <!--Burger Nav-->
+                    <div class="xs:flex xs: items-center xs: flex-shrink-0 xs: text-white xs: mr-0 sm:hidden">
+                          <a href="#" class="logo"><img src="/img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="xs:flex sm:hidden">
+                        <button class="flex px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                         <svg class="fill-current h-6 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="w-full text-center flex-grow xs: is-open block sm:hidden">
+                            <div class="flex-grow text-white font-sm opacity-87">
+                                    <a href="#" class="block mt-4 nav-link">Головна</a>
+                                    <a href="#" class="block mt-4 nav-link">Про нас</a>
+                                    <a href="#" class="block mt-4 nav-link">Послуги</a>
+                                    <a href="#" class="block mt-4 nav-link">Клієнти</a>
+                                   <a href="#" class="block mt-4 nav-link">Контакти</a>
+                            </div>
+                        </div>
+
+                <ul class="nav__menu xs:hidden sm:inline-flex sm:items-center sm:justify-center text-white font-medium opacity-87 sm: text-sm md:text-tiny lg:text-base">
                     <li class="nav__menu-item sm: mx-2 md:mx-4 lg:mx-8"> 
                         <a href="#" class="nav-link">Головна</a>
                     </li>
@@ -23,7 +42,7 @@
                     </li>
                 </ul>
                 </nav>
-            <button class="btn-main btn-main--shadow btn-main--primary bg-primary py-2 px-2 sm:py-2 sm:px-4 md:py-3 md:px-8 lg:py-3 lg:px-10 sm: font-semibold md:font-bold">Замовити</button>
+            <button class="xs: hidden sm:inline-flex btn-main btn-main--shadow btn-main--primary bg-primary py-2 px-2 sm:py-2 sm:px-6 md:py-3 md:px-8 lg:py-3 lg:px-10 sm: font-semibold md:font-bold">Замовити</button>
             </div>
             </div>
         </header>

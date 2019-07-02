@@ -1,9 +1,23 @@
 .l-footer {
-    /*height: 180px;*/
-    .newsletter {
-        &--form {
-            width: 360px;
+    .social {
+        &--link {
+            @apply flex relative justify-center items-center mx-2;
+            &:nth-last-child(1) {
+                @apply mr-0;
+            }
+            &:after {
+                content: "";
+                @apply bg-white rounded-lg;
+                width: 34px;
+                height: 34px;
+                box-shadow: 1.5px 2.6px 9px 0 rgba(0, 0, 0, 0.23);
+                }
+            > img {
+                @apply absolute;
+            }
         }
+    }
+    .newsletter {
         &--input {
             border: 1px solid #009688;
             padding-top: 0.8rem;
@@ -12,3 +26,24 @@
     }
 
 }
+//MEDIA QUERIES
+
+@media screen and (min-width: 375px) {
+    .l-footer {
+        .newsletter {
+            &--form {
+                width: 340px;
+            }
+        }
+    }
+}//XS media end
+
+@media screen and (min-width: 1024px) {
+    .l-footer {
+        .newsletter {
+            &--form {
+                width: 360px;
+            }
+        }
+    }
+}//MD media end
